@@ -1,12 +1,24 @@
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image, Button } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import Checkbox from 'expo-checkbox'
-import { Dimensions } from 'react-native';
+import { Dimensions, ActivityIndicator } from 'react-native';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
+const image = { uri: "https://reactjs.org/logo-og.png" };
 
 const Login = ({navigation}) => {
+
+    const [Loading,setLoading] = useState(false)
+
+    const handleLogin = () =>{
+        setLoading(true)
+        setTimeout(()=>{
+            navigation.navigate("Home")
+            setLoading(false)
+        },500)
+    }
+
   return (
     <View style={styles.mainContainer} >
         <View style={styles.appLogoContainer} >
@@ -32,8 +44,13 @@ const Login = ({navigation}) => {
         <Checkbox />
         <Text style={styles.wrapperText}>{" "} I have read and agreed terms and conditions</Text>
       </View> */}
-      <TouchableOpacity style={styles.loginBtn} onPress={()=>navigation.navigate("Home")}>
+      <TouchableOpacity style={styles.loginBtn} onPress={()=>{
+        handleLogin()
+      }}>
+        <View style={{flexDirection:'row' ,alignItems:'center',justifyContent:'center'}}>
+        { Loading &&<ActivityIndicator size="small" color="white" /> }
         <Text style={styles.BtnText}>Login</Text>
+        </View>
       </TouchableOpacity>
       <View style={styles.footer} >
         <Text style={{textAlign:'center'}} >
@@ -85,7 +102,9 @@ const styles = StyleSheet.create({
         paddingBottom:15,
     },
     labels:{
-        color:"gray"
+        color:"black",
+        fontWeight:'bold',
+        marginBottom:5
     },
     inputStyle:{
         borderWidth:1,

@@ -1,6 +1,6 @@
 import { View, Text,Button } from 'react-native'
 import React from 'react'
-// import ZegoUIKitPrebuiltCall, { ONE_ON_ONE_VIDEO_CALL_CONFIG } from '@zegocloud/zego-uikit-prebuilt-call-rn'
+import ZegoUIKitPrebuiltCall, { ONE_ON_ONE_VIDEO_CALL_CONFIG } from '@zegocloud/zego-uikit-prebuilt-call-rn'
 
 const HomeScreen = ({navigation}) => {
   return (
