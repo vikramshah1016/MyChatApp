@@ -6,6 +6,7 @@ import HomeScreen from './pages/HomeScreen';
 import LoadingScreen from './pages/LoadingScreen';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import AudioCallPage from './pages/AudioCall';
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -15,6 +16,7 @@ export default function App() {
     <Stack.Screen name="Login" component={Login} />
     <Stack.Screen name="Register" component={Register} />
     <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Screen name="AudioCall" component={AudioCallPage} />
     <Stack.Screen name="Loading" component={LoadingScreen} />
     </Stack.Navigator>
   </NavigationContainer>

@@ -1,12 +1,17 @@
-import { View, Text,Button } from 'react-native'
+import {   
+  PermissionsAndroid,
+  Platform,
+  TouchableOpacity,
+  View, Text,Button } from 'react-native'
 import React from 'react'
-import ZegoUIKitPrebuiltCall, { ONE_ON_ONE_VIDEO_CALL_CONFIG } from '@zegocloud/zego-uikit-prebuilt-call-rn'
+
 
 const HomeScreen = ({navigation}) => {
+
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Home Screen</Text>
-      <Button onPress={()=>navigation.navigate("Loading")} title="goto Loading screen" />
+      <Button onPress={()=>navigation.navigate("AudioCall")} title="Call" />
     </View>
   )
 }
