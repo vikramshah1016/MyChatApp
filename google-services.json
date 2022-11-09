@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1095918840511",
+    "project_id": "mychatapp-8c862",
+    "storage_bucket": "mychatapp-8c862.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095918840511:android:f3304ae82cec5a2673340a",
+        "android_client_info": {
+          "package_name": "com.QuantumInfoway.MyChatApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095918840511-2njfkg9ksachloqqp06o627uif8tj17d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDniL18CRLbu8Pd6vtmfVVGrjmKuP1nZew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095918840511-2njfkg9ksachloqqp06o627uif8tj17d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

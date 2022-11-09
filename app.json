@@ -1,4 +1,4 @@
-{
+  {
   "expo": {
     "name": "myChatApp",
     "slug": "myChatApp",
@@ -21,7 +21,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package":"Android.Name",
+      "package":"com.QuantumInfoway.MyChatApp",
       "softwareKeyboardLayoutMode": "pan",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
