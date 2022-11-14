@@ -13,3 +13,6 @@ Terminal
   - Pressing a will open in an Android Emulator or connected device.
   - Pressing i will open in an iOS simulator.
   - Pressing w will open in a web browser. Expo supports all major browsers.
+  
+  
+  (old version of the current my chat aap)
